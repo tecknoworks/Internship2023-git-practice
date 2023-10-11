@@ -7,6 +7,7 @@ const printMenu = () => {
     console.log(`
     Select an option:
         1. List all users
+        5. Search user in list of users
         0. Exit
     `);
 };
@@ -18,6 +19,15 @@ const listUsers = (users) => {
         .join("\n");
     console.log(output);
 };
+
+const searchUsers = (firstName, lastName, users) => {
+    const output = users
+        .map(user => (user.firstName === firstName && user.lastName === lastName) 
+        ? `ID: ${user.id}, First name: ${user.firstName}, Last name: ${user.lastName}`
+        : "User not found")
+    
+    console.log(output)
+}
 
 const runProgram = async () => {
     let users = [
@@ -31,6 +41,10 @@ const runProgram = async () => {
             switch (option) {
                 case "1":
                     listUsers(users);
+                    break;
+                case "5":
+                    console.log("Person you are looking for: ")
+                    searchUsers(await prompt("First Name: "), await prompt("Last Name: "), users)
                     break;
                 case "0":
                     rl.close();
