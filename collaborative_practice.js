@@ -21,6 +21,24 @@ const listUsers = (users) => {
     console.log(output);
 };
 
+const createNewUser = async (users) => {
+    const firstName = await prompt("First Name: ");
+    const lastName = await prompt("Last Name: ");
+
+    if (!firstName || !lastName) {
+        console.log("First name and last name are required.");
+    } else {
+        const newUser = {
+            id: users.length + 1,
+            firstName: firstName,
+            lastName: lastName
+        };
+
+        users.push(newUser);
+        console.log("User created successfully!");
+    }
+};
+
 const printUpdateMenu = () => {
     console.log(`
     Select an option:
@@ -83,17 +101,7 @@ const runProgram = async () => {
                     listUsers(users);
                     break;
                 case "2":
-                    const newUser={
-                        id:users.length+1,
-                        firstName:await prompt("FirstName:"),
-                        lastName:await prompt("Lastname:")
-                    }
-                    if(newUser.firstName===null || newUser.lastName===null){
-                        console.log("ceva");
-                    }
-                    
-                    users.push(newUser)
-                    console.log("User createad succesfully!");
+                    await createNewUser(users)
                     break;
                 case "3":
                     await updateExistingUser(users);
