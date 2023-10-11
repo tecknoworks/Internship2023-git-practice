@@ -24,6 +24,27 @@ const listUsers = (users) => {
 
 
 
+
+const createNewUser = async (users) => {
+    const firstName = await prompt("First Name: ");
+    const lastName = await prompt("Last Name: ");
+
+    if (!firstName || !lastName) {
+        console.log("First name and last name are required.");
+    } else {
+        const newUser = {
+            id: users.length + 1,
+            firstName: firstName,
+            lastName: lastName
+        };
+
+        users.push(newUser);
+        console.log("User created successfully!");
+    }
+};
+
+
+
 const runProgram = async () => {
     let users = [
         { id: 1, firstName: "John", lastName: "Smith" }
@@ -39,19 +60,9 @@ const runProgram = async () => {
                     break;
 
                 case "2":
-                    const newUser={
-                        id:users.length+1,
-                        firstName:await prompt("FirstName:"),
-                        lastName:await prompt("Lastname:")
-                    }
-                    if(newUser.firstName===null || newUser.lastName===null){
-                        console.log("ceva");
-                    }
-                    
-                    users.push(newUser)
-                    console.log("User createad succesfully!");
+                    await createNewUser(users)
                     break;
-                      
+
                 case "0":
                     rl.close();
                     return;
