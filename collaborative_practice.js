@@ -1,4 +1,3 @@
-const { lstatSync } = require('fs');
 const readline = require('readline');
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
@@ -8,7 +7,8 @@ const printMenu = () => {
     console.log(`
     Select an option:
         1. List all users
-        4. Update existing user
+        2. Create new user
+        3. Update existing user
         0. Exit
     `);
 };
@@ -82,9 +82,22 @@ const runProgram = async () => {
                 case "1":
                     listUsers(users);
                     break;
-                case "4":
-                    await updateExistingUser(users);
+                case "2":
+                    const newUser={
+                        id:users.length+1,
+                        firstName:await prompt("FirstName:"),
+                        lastName:await prompt("Lastname:")
+                    }
+                    if(newUser.firstName===null || newUser.lastName===null){
+                        console.log("ceva");
+                    }
+                    
+                    users.push(newUser)
+                    console.log("User createad succesfully!");
                     break;
+                case "3":
+                    await updateExistingUser(users);
+                    break;    
                 case "0":
                     rl.close();
                     return;
