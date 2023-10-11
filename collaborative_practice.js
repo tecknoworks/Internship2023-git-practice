@@ -9,6 +9,7 @@ const printMenu = () => {
         1. List all users
         2. Create new user
         3. Update existing user
+        4. Delete an existing user
         0. Exit
     `);
 };
@@ -19,6 +20,19 @@ const listUsers = (users) => {
         .map(user => `ID: ${user.id}\nFirst name: ${user.firstName}\nLast name: ${user.lastName}\n`)
         .join("\n");
     console.log(output);
+};
+
+const deleteUser = async (users) => {
+    const userIdToDelete = await prompt("Enter the ID of the user to delete: ");
+    
+    const userIndex = users.findIndex(user => user.id === parseInt(userIdToDelete));
+    
+    if (userIndex !== -1) {
+        const deletedUser = users.splice(userIndex, 1)[0];
+        console.log(`User with ID ${deletedUser.id} (${deletedUser.firstName} ${deletedUser.lastName}) has been deleted.`);
+    } else {
+        console.log("User not found.");
+    }
 };
 
 const createNewUser = async (users) => {
@@ -105,7 +119,10 @@ const runProgram = async () => {
                     break;
                 case "3":
                     await updateExistingUser(users);
-                    break;    
+                    break;   
+                case "4":
+                    await deleteUser(users)
+                    break;
                 case "0":
                     rl.close();
                     return;
