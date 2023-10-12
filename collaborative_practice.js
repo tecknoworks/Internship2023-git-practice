@@ -22,19 +22,21 @@ const listUsers = (users) => {
     console.log(output);
 };
 
-const searchUsers = (name, users) => {
+const searchUsers = async (users) => {
+    const name = await prompt("Search by first name or last name: ")
+
     if (name.length >= 2) {
-        let exists = false;
-        users
-            .forEach(user => {
-                if (user.firstName.toLowerCase() === name.toLowerCase() || user.lastName.toLowerCase() === name.toLowerCase()) {
-                    console.log(`ID: ${user.id}, First name: ${user.firstName}, Last name: ${user.lastName}\n`)
-                    exists = true;
-                }
-            })
-            
-        if (!exists) {
+        const output = users
+            .filter(user => user.firstName.toLowerCase() === name.toLowerCase() 
+                        || user.lastName.toLowerCase() === name.toLowerCase()
+                        || user.firstName.toLowerCase().includes(name)
+                        || user.lastName.toLowerCase().includes(name))
+
+        if (output.length === 0) {
             console.log("The name does not exist!")
+        }
+        else {
+            console.log(output)
         }
     }
     else {
@@ -45,9 +47,10 @@ const searchUsers = (name, users) => {
 
 const runProgram = async () => {
     let users = [
-        { id: 1, firstName: "Dan", lastName: "Smith" },
-        { id: 2, firstName: "John", lastName: "Daniels" },
-        { id: 3, firstName: "Marcel", lastName: "John" }
+        { id: 1, firstName: "John", lastName: "Smith" },
+        { id: 2, firstName: "Daniel", lastName: "Smith" },
+        { id: 3, firstName: "Mark", lastName: "John" },
+        { id: 4, firstName: "Dan", lastName: "Smith" }
     ];
     while (true) {
         try {
@@ -73,7 +76,7 @@ const runProgram = async () => {
                     console.log("User createad succesfully!");
                     break;
                 case "5":
-                    searchUsers(await prompt("Please enter a first name or a last name: "), users)
+                    await searchUsers(users)
                     break;
                 case "0":
                     rl.close();
