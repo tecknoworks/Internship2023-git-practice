@@ -9,6 +9,7 @@ const printMenu = () => {
         1. List all users
         2. Create new user
         3. Update existing user
+        4. Search by first name or last name
         0. Exit
     `);
 };
@@ -87,9 +88,34 @@ const updateExistingUser = async (users) => {
     }
 }
 
+const searchUsers = async (users) => {
+    const name = await prompt("Search by first name or last name: ")
+	
+    if (name.length >= 2) {
+        const output = users
+            .filter(user => user.firstName.toLowerCase() === name.toLowerCase() 
+                        || user.lastName.toLowerCase() === name.toLowerCase()
+                        || user.firstName.toLowerCase().includes(name)
+                        || user.lastName.toLowerCase().includes(name))
+
+        if (output.length === 0) {
+            console.log("The name does not exist!")
+        }
+        else {
+            listUsers(output)
+        }
+    }
+    else {
+        console.log("Name length too short!")
+    }
+
+}
 const runProgram = async () => {
     let users = [
-        { id: 1, firstName: "John", lastName: "Smith" }
+        { id: 1, firstName: "John", lastName: "Smith" },
+        { id: 2, firstName: "Daniel", lastName: "Smith" },
+        { id: 3, firstName: "Mark", lastName: "John" },
+        { id: 4, firstName: "Dan", lastName: "Smith" }
     ];
     while (true) {
         try {
@@ -106,6 +132,9 @@ const runProgram = async () => {
                 case "3":
                     await updateExistingUser(users);
                     break;    
+                case "4":
+                    await searchUsers(users)
+                    break
                 case "0":
                     rl.close();
                     return;
