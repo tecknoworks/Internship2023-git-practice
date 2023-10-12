@@ -36,7 +36,7 @@ const searchUsers = async (users) => {
             console.log("The name does not exist!")
         }
         else {
-            console.log(output)
+            listUsers(output)
         }
     }
     else {
