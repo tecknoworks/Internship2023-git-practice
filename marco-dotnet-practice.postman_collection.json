@@ -31,7 +31,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"branch\": \"string\",\r\n  \"section\": \"string\",\r\n  \"gender\": \"string\"\r\n}",
+					"raw": "{\r\n  \"name\": \"Marco\",\r\n  \"branch\": \"CS\",\r\n  \"section\": \"B\",\r\n  \"gender\": \"Male\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,7 +49,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
+					"raw": "{\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
