@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "?https://localhost:{{portNumber}}/api/students",
+					"raw": "https://localhost:{{portNumber}}/api/students",
 					"query": [
 						{
 							"key": "https://localhost:{{portNumber}}/api/students",
