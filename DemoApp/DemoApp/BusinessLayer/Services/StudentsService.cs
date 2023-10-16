@@ -37,5 +37,10 @@ namespace BusinessLayer.Services
         {
             _studentsRepository.DeleteStudent(studentId);
         }
+
+        public void UpdateStudent(int studentId, Student newStudent) 
+        {
+            _studentsRepository.UpdateStudent(studentId, newStudent);
+        }
     }
 }

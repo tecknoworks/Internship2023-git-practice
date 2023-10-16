@@ -1,5 +1,3 @@
-using AutoMapper;
-using BusinessLayer.DTOs;
 using BusinessLayer.Models;
 using BusinessLayer.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -11,26 +9,23 @@ namespace DemoApp.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentsService _studentService;
-        private readonly IMapper _mapper;
 
-        public StudentsController(IStudentsService studentService, IMapper mapper)
+        public StudentsController(IStudentsService studentService)
         {
-            _studentService = studentService ?? throw new ArgumentNullException(nameof(studentService));
-            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _studentService = studentService;
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<StudentDto>>> GetStudents()
+        [HttpGet("GetStudents")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            var students = await _studentService.GetStudentsAsync();
-            return Ok(_mapper.Map<IEnumerable<StudentDto>>(students));
+            return Ok(await _studentService.GetStudentsAsync());
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("{studentId}", Name ="GetStudent")]
-        public async Task<ActionResult<StudentDto>> GetStudent(int studentId)
+        [HttpGet("GetStudent/{studentId}", Name ="GetStudent")]
+        public async Task<ActionResult<Student>> GetStudent(int studentId)
         {
             var student = await _studentService.GetStudentAsync(studentId);
 
@@ -39,42 +34,42 @@ namespace DemoApp.Controllers
                 return NotFound($"Student with id {studentId} does not exist.");
             }
 
-            return Ok(_mapper.Map<StudentDto>(student));
+            return Ok(student);
         }
 
         [ProducesResponseType(StatusCodes.Status201Created)]
-        [HttpPost]
-        public ActionResult<StudentDto> CreateStudent(StudentForCreationDto newStudent)
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPost("CreateStudent")]
+        public async Task<ActionResult<Student>> CreateStudent(Student newStudent)
         {
-            var student = _mapper.Map<Student>(newStudent);
+            if (await _studentService.StudentExistsAsync(newStudent.Id))
+            {
+                return BadRequest($"Student with id {newStudent.Id} already exists.");
+            }
 
-            _studentService.CreateStudent(student);
+            _studentService.CreateStudent(newStudent);
 
-            var studentToReturn = _mapper.Map<StudentDto>(student);
-
-            return CreatedAtRoute("GetStudent", new { studentId = studentToReturn.Id }, studentToReturn);
+            return CreatedAtRoute("GetStudent", new { studentId = newStudent.Id }, newStudent);
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [HttpPut("{studentId}")]
-        public async Task<ActionResult> UpdateStudent(int studentId, StudentForUpdateDto updatedStudent) 
+        [HttpPut("UpdateStudent/{studentId}")]
+        public async Task<ActionResult> UpdateStudent(int studentId, Student updatedStudent) 
         {
-            var studentToUpdate = await _studentService.GetStudentAsync(studentId);
-            
-            if (studentToUpdate == null) 
+            if (!await _studentService.StudentExistsAsync(studentId)) 
             {
                 return NotFound($"Student with id {studentId} does not exist.");
             }
 
-            _mapper.Map(updatedStudent, studentToUpdate);
+            _studentService.UpdateStudent(studentId, updatedStudent);
 
             return NoContent();
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [HttpDelete("{studentId}")]
+        [HttpDelete("DeleteStudent/{studentId}")]
         public async Task<ActionResult> DeleteStudent(int studentId)
         {
             if (!await _studentService.StudentExistsAsync(studentId))

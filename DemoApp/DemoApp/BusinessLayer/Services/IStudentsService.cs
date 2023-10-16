@@ -10,5 +10,6 @@ namespace BusinessLayer.Services
         Task<bool> StudentExistsAsync(int studentId);
         void CreateStudent(Student newStudent);
         void DeleteStudent(int studentId);
+        void UpdateStudent(int studentId, Student newStudent);
     }
 }
