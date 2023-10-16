@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c0460337-a3c0-4298-bf8d-8f340408f507",
+		"_postman_id": "2ea4f537-c14e-4d96-8a6b-6f66d24a9bdf",
 		"name": "marco-dotnet-practice",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "30488129"
@@ -11,7 +11,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://localhost:{{portNumber}}/api/students"
+				"url": "https://localhost:{{portNumber}}/api/students/GetStudents"
 			},
 			"response": []
 		},
@@ -20,7 +20,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://localhost:{{portNumber}}/api/students/101"
+				"url": "https://localhost:{{portNumber}}/api/students/GetStudent/101"
 			},
 			"response": []
 		},
@@ -31,14 +31,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Marco\",\r\n  \"branch\": \"CS\",\r\n  \"section\": \"B\",\r\n  \"gender\": \"Male\"\r\n}",
+					"raw": "{\r\n  \"id\": 200,\r\n  \"name\": \"Marco\",\r\n  \"branch\": \"CS\",\r\n  \"section\": \"B\",\r\n  \"gender\": \"Male\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://localhost:{{portNumber}}/api/students"
+				"url": "https://localhost:{{portNumber}}/api/students/CreateStudent"
 			},
 			"response": []
 		},
@@ -49,14 +49,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
+					"raw": "{\r\n  \"id\": 101,\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://localhost:{{portNumber}}/api/students/101"
+				"url": "https://localhost:{{portNumber}}/api/students/UpdateStudent/101"
 			},
 			"response": []
 		},
@@ -65,7 +65,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "https://localhost:{{portNumber}}/api/students/101"
+				"url": "https://localhost:{{portNumber}}/api/students/DeleteStudent/101"
 			},
 			"response": []
 		}
