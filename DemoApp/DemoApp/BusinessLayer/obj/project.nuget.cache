@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "thWzU16tYAX8qJ7hS3fHh6rYm7Ldw04X9suj0xJ98+FjonTCeMVL42d0qZ/MCeIAYVTBRVZyEvyAtNm89xY3+g==",
+  "dgSpecHash": "W9uGnWyBxZxUOc2NCseeD9TUCET3fwotXoCM++yI6iu9ZZs25/tCfCetX/aJdFsbZFehHtpYw9rwLIIj0h0z4w==",
   "success": true,
-  "projectFilePath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -10,3 +10,18 @@ C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.d
 C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
 C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
 C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

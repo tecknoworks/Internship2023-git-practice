@@ -1,45 +1,26 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "BusinessLayer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/BusinessLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BusinessLayer.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "BusinessLayer/1.0.0": {
-      "type": "project",
-      "path": "../BusinessLayer/BusinessLayer.csproj",
-      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "BusinessLayer >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alexandra Czako\\.nuget\\packages\\": {}
+    "C:\\Users\\BogdanFIlip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\Alexandra Czako\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\BogdanFIlip\\.nuget\\packages\\",
+      "outputPath": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alexandra Czako\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BogdanFIlip\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -84,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
