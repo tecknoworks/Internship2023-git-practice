@@ -1,0 +1,42 @@
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Work\TKW\.NET demo app\DemoApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
