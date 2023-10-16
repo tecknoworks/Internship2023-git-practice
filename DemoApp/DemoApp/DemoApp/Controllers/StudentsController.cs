@@ -53,7 +53,7 @@ namespace DemoApp.Controllers
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpPut("UpdateStudent/{studentId}")]
         public async Task<ActionResult> UpdateStudent(int studentId, Student updatedStudent) 
         {
@@ -64,11 +64,11 @@ namespace DemoApp.Controllers
 
             _studentService.UpdateStudent(studentId, updatedStudent);
 
-            return NoContent();
+            return Ok("Student was updated successfully");
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpDelete("DeleteStudent/{studentId}")]
         public async Task<ActionResult> DeleteStudent(int studentId)
         {
@@ -77,9 +77,16 @@ namespace DemoApp.Controllers
                 return NotFound($"Student with id {studentId} does not exist.");
             }
 
-            _studentService.DeleteStudent(studentId);
+            try
+            {
+                _studentService.DeleteStudent(studentId);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
 
-            return NoContent();
+            return Ok("Student was deleted successfully.");
         }
     }
 }

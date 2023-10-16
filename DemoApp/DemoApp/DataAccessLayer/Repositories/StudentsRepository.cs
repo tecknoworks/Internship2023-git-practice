@@ -29,7 +29,14 @@ namespace DataAccessLayer.Repositories
 
         public void DeleteStudent(int studentId)
         {
-            _students.RemoveAll(student => student.Id == studentId);
+            var student = _students.Where(student => student.Id == studentId).FirstOrDefault();
+
+            if (student == null) 
+            {
+                throw new Exception($"Student with id {studentId} does not exist.");
+            }
+
+            _students.Remove(student);
         }
 
         public void UpdateStudent(int studentId, Student updatedStudent)

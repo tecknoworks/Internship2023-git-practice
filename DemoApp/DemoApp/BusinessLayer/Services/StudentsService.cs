@@ -35,7 +35,14 @@ namespace BusinessLayer.Services
 
         public void DeleteStudent(int studentId)
         {
-            _studentsRepository.DeleteStudent(studentId);
+            try
+            {
+                _studentsRepository.DeleteStudent(studentId);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void UpdateStudent(int studentId, Student newStudent) 
