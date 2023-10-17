@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "BusinessLayer/1.0.0": {
+        "dependencies": {
+          "DataAccessLayer": "1.0.0"
+        },
         "runtime": {
           "BusinessLayer.dll": {}
+        }
+      },
+      "DataAccessLayer/1.0.0": {
+        "runtime": {
+          "DataAccessLayer.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccessLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

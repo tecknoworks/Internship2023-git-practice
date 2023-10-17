@@ -1,4 +1,5 @@
 using BusinessLayer.Services;
+using DataAccessLayer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IStudentsService, StudentsService>();
+builder.Services.AddSingleton<IStudentsRepository, StudentsRepository>();
 
 var app = builder.Build();
 
