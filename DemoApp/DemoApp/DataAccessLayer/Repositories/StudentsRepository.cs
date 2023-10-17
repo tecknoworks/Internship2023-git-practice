@@ -65,10 +65,10 @@ namespace DataAccessLayer.Repositories
 
             var updatedStudentList = Students.Where(s => s.Id == id).Select(async student =>
             {
-                student.Name = stud.Name;
-                student.Branch = stud.Branch;
-                student.Section = stud.Section;
-                student.Gender = stud.Gender;
+                student.Name = String.IsNullOrEmpty(stud.Name) ? newStudent.Name : stud.Name;
+                student.Branch = String.IsNullOrEmpty(stud.Branch) ? newStudent.Branch : stud.Branch;
+                student.Section = String.IsNullOrEmpty(stud.Section) ? newStudent.Section : stud.Section;
+                student.Gender = String.IsNullOrEmpty(stud.Gender) ? newStudent.Gender : stud.Gender;
 
                 return student;
 
