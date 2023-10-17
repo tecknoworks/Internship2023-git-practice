@@ -264,11 +264,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DemoApp\\DemoApp.csproj",
+      "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DemoApp\\DemoApp.csproj",
       "projectName": "DemoApp",
-      "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DemoApp\\DemoApp.csproj",
+      "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DemoApp\\DemoApp.csproj",
       "packagesPath": "C:\\Users\\MihaiFabian-Bob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DemoApp\\obj\\",
+      "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DemoApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MihaiFabian-Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -285,11 +285,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

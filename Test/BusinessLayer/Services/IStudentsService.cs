@@ -5,10 +5,10 @@ namespace BusinessLayer.Services
 {
     public interface IStudentsService
     {
-        public IEnumerable<Student> GetUsers();
-        public Student GetStudentByID(int id);
-        public void DelateStudent(int id);
-        public Student CreateStudent(Student student);
-        public Student UpdateStudent(Student updatedStudent, int id);
+        public Task<IEnumerable<Student>>  GetUsers();
+        public Task<Student> GetStudentByID(int id);
+        public Task DelateStudent(int id);
+        public Task<Student> CreateStudent(Student student);
+        public Task<Student> UpdateStudent(Student updatedStudent, int id);
     }
 }

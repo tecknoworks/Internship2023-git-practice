@@ -1,14 +1,15 @@
 ﻿using BusinessLayer.Models;
+using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
     public interface IStudentsRepository
     {
-        public IEnumerable<Student> GetStudents();
-        public Student GetStudentByID(int id);
-        public void DelateStudent(int id);
-        public Student CreateStudent(Student student);
-        public Student UpdateStudent(Student updatedStudent, int id);
+        public Task<IEnumerable<Student>> GetStudents();
+        public Task<Student> GetStudentByID(int id);
+        public Task DelateStudent(int id);
+        public Task<Student> CreateStudent(Student student);
+        public Task<Student> UpdateStudent(Student updatedStudent, int id);
 
     }
 }

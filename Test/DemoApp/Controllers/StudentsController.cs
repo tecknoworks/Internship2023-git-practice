@@ -20,7 +20,7 @@ namespace DemoApp.Controllers
         [HttpGet("/allstudent")]
         public async Task<ActionResult<IEnumerable<Student>>> Get()
         {
-            return Ok(studentService.GetUsers());
+            return  Ok(await studentService.GetUsers());
         }
 
 
@@ -29,7 +29,7 @@ namespace DemoApp.Controllers
         {
             try
             {
-                return Ok(studentService.GetStudentByID(id));
+                return Ok(await studentService.GetStudentByID(id));
             }
             catch (Exception ex)
             {
@@ -40,11 +40,11 @@ namespace DemoApp.Controllers
 
         //detele user
         [HttpDelete("/{id}")]
-        public ActionResult DelateStudent(int id)
+        public async Task<ActionResult>  DelateStudent(int id)
         {
             try
             {
-                studentService.DelateStudent(id);
+                 await studentService.DelateStudent(id);
             }catch (Exception ex)
             {
                 return BadRequest(ex.Message);
@@ -56,17 +56,17 @@ namespace DemoApp.Controllers
         //create user 
         [ProducesResponseType(StatusCodes.Status201Created)]
         [HttpPost("/students")]
-        public Student CreateStudent(Student student)
+        public async Task<Student> CreateStudent(Student student)
         {
-           return studentService.CreateStudent(student);
+           return await studentService.CreateStudent(student);
         }
 
         //update user
 
         [HttpPut("/{id}")]
-        public Student UpdateStudent(Student updatedStudent, int id)
+        public async Task<Student> UpdateStudent(Student updatedStudent, int id)
         {
-            return studentService.UpdateStudent(updatedStudent, id);
+            return await studentService.UpdateStudent(updatedStudent, id);
         }
     }
 }

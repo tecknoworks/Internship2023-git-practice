@@ -5,26 +5,26 @@ namespace DataAccessLayer.Repositories
     public class StudentsRepository : IStudentsRepository
     {
         //get all students
-        public IEnumerable<Student> GetStudents()
+        public async Task<IEnumerable<Student>>  GetStudents()
         {
-            return  DataSource();
+            return await DataSource();
         }
 
         //get by id
-        public Student GetStudentByID(int id)
+        public async Task<Student> GetStudentByID(int id)
         {
-            List<Student> students = DataSource();
+            List<Student> students = await DataSource();
             if (!students.Exists(student => student.Id == id))
             {
                 throw new Exception("Nu exista student!");
             }
-            return students.Where(studen => studen.Id  == id).FirstOrDefault();
+            return await Task.FromResult(students.Where(studen => studen.Id == id).FirstOrDefault());
         }
 
         //delete user
-        public void DelateStudent(int id)
+        public async Task DelateStudent(int id)
         {
-            List<Student> students= DataSource();
+            List<Student> students= await DataSource();
             
             if(!students.Exists(students => students.Id == id)) {
                 throw new Exception("Nu exista student!");
@@ -34,31 +34,31 @@ namespace DataAccessLayer.Repositories
             students.Remove(student);
         }
 
+
         //create user
-        public Student CreateStudent(Student student)
+        public async Task<Student> CreateStudent(Student student)
         {
-           
-            List<Student> students = DataSource();
+            List<Student> students =await DataSource();
             int index= students.Last().Id;
             student.Id = index+1;
             students.Add(student);
-            return student;
+            return await Task.FromResult (student);
         }
 
         //update user
-        public Student UpdateStudent(Student updatedStudent, int id)
+        public async Task<Student> UpdateStudent(Student updatedStudent, int id)
         {
             if (!students.Exists(students => students.Id == id))
             {
                 throw new Exception("Nu exista student!");
             }
             students = students.Select(student => student.Id == id ? updatedStudent : student).ToList();
-            return updatedStudent;
+            return await Task.FromResult(updatedStudent);
         }
 
-        public List<Student> DataSource()
+        public async Task <List<Student>> DataSource()
         {
-            return students;
+            return await Task.FromResult(students);
         }
 
         private List<Student> students = new List<Student>()

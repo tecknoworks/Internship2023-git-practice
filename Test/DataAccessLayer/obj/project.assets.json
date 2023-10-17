@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\MihaiFabian-Bob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\New folder\\Internship2023-git-practice\\Test\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MihaiFabian-Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",

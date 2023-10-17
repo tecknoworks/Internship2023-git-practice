@@ -15,17 +15,17 @@ namespace BusinessLayer.Services
 
 
         //get all students
-        public IEnumerable<Student> GetUsers()
+        public async Task<IEnumerable<Student>> GetUsers()
         {
-           return studentsRepository.GetStudents();
+           return await studentsRepository.GetStudents();
         }
 
         //get student by id
-        public Student GetStudentByID(int id)
+        public async Task<Student>  GetStudentByID(int id)
         {
             try
             {
-                return studentsRepository.GetStudentByID(id);
+                return await studentsRepository.GetStudentByID(id);
             }
             catch(Exception) 
             {
@@ -35,11 +35,11 @@ namespace BusinessLayer.Services
 
 
         //delete user
-        public void DelateStudent(int id)
+        public async Task DelateStudent(int id)
         {
             try
             {
-                studentsRepository.DelateStudent(id);
+                await studentsRepository.DelateStudent(id);
             }catch(Exception)
             {
                 throw;
@@ -47,15 +47,15 @@ namespace BusinessLayer.Services
         }
 
         //create user
-        public Student CreateStudent(Student student)
+        public async Task<Student>  CreateStudent(Student student)
         {
-           return studentsRepository.CreateStudent(student);
+           return await studentsRepository.CreateStudent(student);
         }
 
         //update user
-        public Student UpdateStudent(Student updatedStudent, int id)
+        public async Task<Student> UpdateStudent(Student updatedStudent, int id)
         {
-            return studentsRepository.UpdateStudent(updatedStudent, id);
+            return await studentsRepository.UpdateStudent(updatedStudent, id);
         }
     }
 }

@@ -35,3 +35,14 @@ C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLaye
 C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
 C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
