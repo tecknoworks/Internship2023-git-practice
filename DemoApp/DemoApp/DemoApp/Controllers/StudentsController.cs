@@ -47,7 +47,7 @@ namespace DemoApp.Controllers
                 return BadRequest($"Student with id {newStudent.Id} already exists.");
             }
 
-            _studentService.CreateStudent(newStudent);
+            await _studentService.CreateStudent(newStudent);
 
             return CreatedAtRoute("GetStudent", new { studentId = newStudent.Id }, newStudent);
         }
@@ -62,7 +62,7 @@ namespace DemoApp.Controllers
                 return NotFound($"Student with id {studentId} does not exist.");
             }
 
-            _studentService.UpdateStudent(studentId, updatedStudent);
+            await _studentService.UpdateStudent(studentId, updatedStudent);
 
             return Ok("Student was updated successfully");
         }
@@ -79,7 +79,7 @@ namespace DemoApp.Controllers
 
             try
             {
-                _studentService.DeleteStudent(studentId);
+                await _studentService.DeleteStudent(studentId);
             }
             catch (Exception ex)
             {

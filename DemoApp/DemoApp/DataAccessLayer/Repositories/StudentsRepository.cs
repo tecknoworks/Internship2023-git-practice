@@ -22,12 +22,13 @@ namespace DataAccessLayer.Repositories
             return students.Any(student => student.Id == studentId);
         }
 
-        public void CreateStudent(Student newStudent)
+        public Task CreateStudent(Student newStudent)
         {
             _students.Add(newStudent);
+            return Task.CompletedTask;
         }
 
-        public void DeleteStudent(int studentId)
+        public Task DeleteStudent(int studentId)
         {
             var student = _students.Where(student => student.Id == studentId).FirstOrDefault();
 
@@ -37,11 +38,15 @@ namespace DataAccessLayer.Repositories
             }
 
             _students.Remove(student);
+            return Task.CompletedTask;
+
         }
 
-        public void UpdateStudent(int studentId, Student updatedStudent)
+        public Task UpdateStudent(int studentId, Student updatedStudent)
         {
-            _students = _students.Select(student => student.Id == studentId ? updatedStudent : student).ToList(); 
+            _students = _students.Select(student => student.Id == studentId ? updatedStudent : student).ToList();
+            return Task.CompletedTask;
+
         }
 
         private List<Student> _students = new List<Student>()

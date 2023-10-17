@@ -28,16 +28,18 @@ namespace BusinessLayer.Services
             return await _studentsRepository.StudentExistsAsync(studentId);
         }
 
-        public void CreateStudent(Student newStudent)
+        public Task CreateStudent(Student newStudent)
         {
             _studentsRepository.CreateStudent(newStudent);
+            return Task.CompletedTask;
         }
 
-        public void DeleteStudent(int studentId)
+        public Task DeleteStudent(int studentId)
         {
             try
             {
                 _studentsRepository.DeleteStudent(studentId);
+                return Task.CompletedTask;
             }
             catch (Exception ex)
             {
@@ -45,9 +47,10 @@ namespace BusinessLayer.Services
             }
         }
 
-        public void UpdateStudent(int studentId, Student newStudent) 
+        public Task UpdateStudent(int studentId, Student newStudent) 
         {
             _studentsRepository.UpdateStudent(studentId, newStudent);
+            return Task.CompletedTask;
         }
     }
 }
