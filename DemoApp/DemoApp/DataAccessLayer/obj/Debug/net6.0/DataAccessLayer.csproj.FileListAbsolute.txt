@@ -24,3 +24,6 @@ C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\o
 C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
 C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Work\Internship\Internship2023-git-practice\DemoApp\DemoApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
