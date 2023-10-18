@@ -21,10 +21,17 @@ namespace DemoApp.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet("GetPersons")]
-        public async Task<ActionResult<IEnumerable<PersonDto>>> GetPersons()
+        public async Task<ActionResult<List<PersonDto>>> GetPersons()
         {
-            var persons = await _personService.GetPersonsAsync();
-            return Ok(_mapper.Map<IEnumerable<PersonDto>>(persons));
+            try 
+            {
+                var persons = await _personService.GetPersonsAsync();
+                return Ok(_mapper.Map<List<PersonDto>>(persons));
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -32,8 +39,15 @@ namespace DemoApp.Controllers
         public async Task<ActionResult<PersonDto>> CreatePerson([FromBody]PersonDtoWithoutId newPerson)
         {
             var person = _mapper.Map<Person>(newPerson);
-            return Ok(await _personService.CreatePersonAsync(person));
-
+            try
+            {
+                var createdPerson = await _personService.CreatePersonAsync(person);
+                return Ok(_mapper.Map<PersonDto>(createdPerson));
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -41,18 +55,26 @@ namespace DemoApp.Controllers
         [HttpPut("UpdatePerson/{personId}")]
         public async Task<ActionResult<PersonDto>> UpdatePerson(int personId, [FromBody]PersonDtoWithoutId updatedPerson)
         {
-            var person = await _personService.GetPersonAsync(personId);
-
-            if (person == null) 
+            try
             {
-                return NotFound($"Person with id {personId} does not exist.");
+                var person = await _personService.GetPersonAsync(personId);
+
+                if (person == null)
+                {
+                    return NotFound($"Person with id {personId} does not exist.");
+                }
+
+                _mapper.Map(updatedPerson, person);
+
+                await _personService.SaveChangesAsync();
+    
+                return Ok(updatedPerson);
+
             }
-
-            _mapper.Map(updatedPerson, person);
-
-            await _personService.SaveChangesAsync();
-            
-            return Ok(updatedPerson);
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }   
         }
     }
 }

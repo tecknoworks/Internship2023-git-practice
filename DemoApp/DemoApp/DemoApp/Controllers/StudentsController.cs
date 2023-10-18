@@ -21,25 +21,34 @@ namespace DemoApp.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet("GetStudents")]
-        public async Task<ActionResult<IEnumerable<StudentDto>>> GetStudents()
+        public async Task<ActionResult<List<StudentWithDetailsDto>>> GetStudents()
         {
-            var students = await _studentService.GetStudentsAsync();
-            return Ok(_mapper.Map<IEnumerable<StudentDto>>(students));
+            try
+            {
+                return Ok(_mapper.Map<List<StudentWithDetailsDto>>(await _studentService.GetStudentsAsync()));
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPost("CreateStudent/{personId}")]
-        public async Task<ActionResult<StudentDto>> CreateStudent(int personId, [FromBody] StudentDtoWithoutId newStudent)
+        public async Task<ActionResult<StudentWithDetailsDto>> CreateStudent(int personId, [FromBody] StudentDtoWithoutId newStudent)
         {
 
             var student = _mapper.Map<Student>(newStudent);
 
-            await _studentService.CreateStudent(personId, student);
-
-            var studentToReturn = _mapper.Map<StudentDto>(student);
-
-            return Ok(studentToReturn);
+            try
+            {
+                return Ok(_mapper.Map<StudentWithDetailsDto>(await _studentService.CreateStudent(personId, student)));
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]

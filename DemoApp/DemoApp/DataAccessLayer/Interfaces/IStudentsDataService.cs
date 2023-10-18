@@ -9,7 +9,7 @@ namespace DataAccessLayer.Interfaces
 {
     public interface IStudentsDataService
     {
-        Task<IEnumerable<Student>> GetStudentsAsync();
+        Task<List<Student>> GetStudentsAsync();
         Task<Student> CreateStudentAsync(int personId, Student newStudent);
         Task DeleteStudentAsync(int studentId);
         Task<bool> StudentExistsAsync(int studentId);

@@ -10,6 +10,7 @@ namespace DemoApp.Profiles
         {
             CreateMap<StudentDto, Student>();
             CreateMap<Student, StudentDto>();
+            CreateMap<Student, StudentWithDetailsDto>();
             CreateMap<StudentDtoWithoutId, Student>();
         }
     }

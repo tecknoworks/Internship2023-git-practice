@@ -18,27 +18,62 @@ namespace BusinessLayer.Services
         }
         public async Task<Person> CreatePersonAsync(Person newPerson)
         {
-            return await _personDataService.CreatePersonAsync(newPerson);
+            try 
+            {
+                return await _personDataService.CreatePersonAsync(newPerson);
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
-        public async Task<IEnumerable<Person>> GetPersonsAsync()
+        public async Task<List<Person>> GetPersonsAsync()
         {
-            return await _personDataService.GetPersonsAsync();
+            try
+            {
+                return await _personDataService.GetPersonsAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public async Task<Person?> GetPersonAsync(int personId)
+        public async Task<Person> GetPersonAsync(int personId)
         {
-            return await _personDataService.GetPersonAsync(personId);
+            try 
+            {
+                return await _personDataService.GetPersonAsync(personId);
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task<Person> UpdatePersonAsync(int personId, Person updatedPerson)
         {
-            return await _personDataService.UpdatePersonAsync(personId, updatedPerson);
+            try
+            {
+                return await _personDataService.UpdatePersonAsync(personId, updatedPerson);
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task SaveChangesAsync()
         {
-            await _personDataService.SaveChangesAsync();
+            try
+            {
+                await _personDataService.SaveChangesAsync();
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
     }
 }

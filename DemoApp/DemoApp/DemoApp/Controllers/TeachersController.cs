@@ -20,19 +20,32 @@ namespace DemoApp.Controllers
         }
 
         [HttpGet("GetTeachers")]
-        public async Task<ActionResult<IEnumerable<TeacherDto>>> GetTeachers()
+        public async Task<ActionResult<List<TeacherWithDetailsDto>>> GetTeachers()
         {
-            return Ok(await _teachersService.GetTeachersAsync());
+            try
+            {
+                return Ok(_mapper.Map<List<TeacherWithDetailsDto>>(await _teachersService.GetTeachersAsync()));
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);  
+            }
         }
 
         [HttpPost("CreateTeacher/{personId}")]
-        public async Task<ActionResult<TeacherDto>> CreateTeacher([FromRoute]int personId, [FromBody] TeacherDtoWithoutId newTeacher)
+        public async Task<ActionResult<TeacherWithDetailsDto>> CreateTeacher([FromRoute]int personId, [FromBody] TeacherDtoWithoutId newTeacher)
         {
             var teacher = _mapper.Map<Teacher>(newTeacher);
-
-            var createdTeacher = await _teachersService.CreateTeacherAsync(personId, teacher);
-
-            return Ok(_mapper.Map<TeacherDto>(createdTeacher));
+            
+            try
+            {
+                var createdTeacher = await _teachersService.CreateTeacherAsync(personId, teacher);
+                return Ok(_mapper.Map<TeacherWithDetailsDto>(createdTeacher));
+            }
+            catch(Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }

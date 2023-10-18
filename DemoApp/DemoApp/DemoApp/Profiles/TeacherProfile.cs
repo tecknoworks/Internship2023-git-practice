@@ -11,6 +11,8 @@ namespace DemoApp.Profiles
             CreateMap<TeacherDto, Teacher>();
             CreateMap<TeacherDtoWithoutId, Teacher>();
             CreateMap<Teacher, TeacherDto>();
+            CreateMap<TeacherWithDetailsDto, Teacher>();
+            CreateMap<Teacher, TeacherWithDetailsDto>();
         }
     }
 }

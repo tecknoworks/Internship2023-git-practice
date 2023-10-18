@@ -17,14 +17,28 @@ namespace BusinessLayer.Services
             _teachersDataService = teachersDataService; 
         }
 
-        public async Task<IEnumerable<Teacher>> GetTeachersAsync()
+        public async Task<List<Teacher>> GetTeachersAsync()
         {
-            return await _teachersDataService.GetTeachersAsync();
+            try
+            {
+                return await _teachersDataService.GetTeachersAsync();
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task<Teacher> CreateTeacherAsync(int personId, Teacher newTeacher)
         {
-            return await _teachersDataService.CreateTeacherAsync(personId, newTeacher);
+            try
+            {
+                return await _teachersDataService.CreateTeacherAsync(personId, newTeacher);
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
     }
 }

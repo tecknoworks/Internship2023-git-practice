@@ -15,26 +15,45 @@ namespace BusinessLayer.Services
 
         public async Task<IEnumerable<Student>> GetStudentsAsync()
         {
-            return await _studentService.GetStudentsAsync();
-
+            try
+            {
+                return await _studentService.GetStudentsAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<bool> StudentExistsAsync(int studentId)
         {
-            return await _studentService.StudentExistsAsync(studentId);
+            try
+            {
+                return await _studentService.StudentExistsAsync(studentId);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<Student> CreateStudent(int personId, Student newStudent)
         {
-            return await _studentService.CreateStudentAsync(personId, newStudent);
+            try
+            {
+                return await _studentService.CreateStudentAsync(personId, newStudent);
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
         }
 
-        public Task DeleteStudent(int studentId)
+        public async Task DeleteStudent(int studentId)
         {
             try
             {
-                _studentService.DeleteStudentAsync(studentId);
-                return Task.CompletedTask;
+                await _studentService.DeleteStudentAsync(studentId);
             }
             catch (Exception ex)
             {

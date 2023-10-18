@@ -15,31 +15,64 @@ namespace DataAccessLayer.Services
 
         public async Task<Person> CreatePersonAsync(Person newPerson) 
         {
-            await _context.Persons.AddAsync(newPerson);
-            await _context.SaveChangesAsync();
-            return newPerson;
+            try
+            {
+                await _context.Persons.AddAsync(newPerson);
+                await _context.SaveChangesAsync();
+                return newPerson;
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
         }
 
-        public async Task<Person?> GetPersonAsync(int personId)
+        public async Task<Person> GetPersonAsync(int personId)
         {
-            return await _context.Persons.FirstOrDefaultAsync(person => person.Id == personId);
+            var person = await _context.Persons.FirstOrDefaultAsync(person => person.Id == personId);
+            if (person == null) 
+            {
+                throw new KeyNotFoundException($"Person with id {personId} does not exist.");
+            }
+            return person;
         }
 
-        public async Task<IEnumerable<Person>> GetPersonsAsync()
+        public async Task<List<Person>> GetPersonsAsync()
         {
-            return await _context.Persons.ToListAsync();
+            try
+            {
+                return await _context.Persons.ToListAsync();
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch(Exception ex)
+            { 
+                throw ex;
+            }
         }
 
         public async Task<Person> UpdatePersonAsync(int personId, Person updatedPerson)
         {
-            _context.Persons.Update(updatedPerson);
-            await _context.SaveChangesAsync();
-            return updatedPerson;
+            try
+            {
+                _context.Persons.Update(updatedPerson);
+                await _context.SaveChangesAsync();
+                return updatedPerson;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

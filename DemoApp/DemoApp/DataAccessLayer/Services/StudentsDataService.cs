@@ -13,22 +13,51 @@ namespace DataAccessLayer.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Student>> GetStudentsAsync()
+        public async Task<List<Student>> GetStudentsAsync()
         {
-            return await _context.Students.ToListAsync();
+            try
+            {
+                return await _context.Students.Include(s => s.Person).ToListAsync();
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task<bool> StudentExistsAsync(int studentId)
         {
-            return await _context.Students.AnyAsync(student => student.Id == studentId);
+            try
+            {
+                return await _context.Students.AnyAsync(student => student.Id == studentId);
+            }
+            catch (Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task<Student> CreateStudentAsync(int personId, Student newStudent)
         {
-            newStudent.PersonId = personId;
-            await _context.Students.AddAsync(newStudent);
-            await _context.SaveChangesAsync();
-            return newStudent;
+            var person = await _context.Persons.FirstOrDefaultAsync(person => person.Id == personId);   
+
+            if (person == null) 
+            {
+                throw new KeyNotFoundException($"Person with id {personId} does not exist.");
+            }
+
+            try
+            {
+                newStudent.Person = person;
+                newStudent.PersonId = personId;
+                await _context.Students.AddAsync(newStudent);
+                await _context.SaveChangesAsync();
+                return newStudent;
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
         }
 
         public async Task DeleteStudentAsync(int studentId)
@@ -38,8 +67,16 @@ namespace DataAccessLayer.Services
             {
                 throw new Exception($"Student with id {studentId} does not exist.");
             }
-            _context.Students.Remove(student);
-            await _context.SaveChangesAsync();
+
+            try 
+            {
+                _context.Students.Remove(student);
+                await _context.SaveChangesAsync();
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
         }
     }
 }

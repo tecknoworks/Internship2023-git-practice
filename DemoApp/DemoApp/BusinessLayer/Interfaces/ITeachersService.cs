@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface ITeachersService
     {
-        Task<IEnumerable<Teacher>> GetTeachersAsync();
+        Task<List<Teacher>> GetTeachersAsync();
         Task<Teacher> CreateTeacherAsync(int personId, Teacher newTeacher);
     }
 }
