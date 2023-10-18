@@ -20,12 +20,18 @@ namespace DemoApp.Controllers
         [HttpGet("/allstudent")]
         public async Task<ActionResult<IEnumerable<Student>>> Get()
         {
-            return  Ok(await studentService.GetUsers());
+            try
+            {
+                return Ok(await studentService.GetUsers());
+            }catch (Exception) {
+                throw;
+            }
+            
         }
 
 
         [HttpGet("/{id}")]
-        public async Task<ActionResult<Student>> GetStudentByID(int id)
+        public async Task<ActionResult<Student?>> GetStudentByID(int id)
         {
             try
             {
@@ -44,12 +50,14 @@ namespace DemoApp.Controllers
         {
             try
             {
-                 await studentService.DelateStudent(id);
-            }catch (Exception ex)
+                await studentService.DelateStudent(id);
+                return Ok("Deleted succesfully.");
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            return Ok("Deleted succesfully.");
+           
             
         }
 
@@ -58,7 +66,14 @@ namespace DemoApp.Controllers
         [HttpPost("/students")]
         public async Task<Student> CreateStudent(Student student)
         {
-           return await studentService.CreateStudent(student);
+            try
+            {
+                return await studentService.CreateStudent(student);
+            }catch (Exception )
+            {
+                throw;
+            }
+           
         }
 
         //update user
@@ -66,7 +81,15 @@ namespace DemoApp.Controllers
         [HttpPut("/{id}")]
         public async Task<Student> UpdateStudent(Student updatedStudent, int id)
         {
-            return await studentService.UpdateStudent(updatedStudent, id);
+            try
+            {
+                return await studentService.UpdateStudent(updatedStudent, id);
+            }
+            catch
+            {
+                throw;
+            }
+            
         }
     }
 }
