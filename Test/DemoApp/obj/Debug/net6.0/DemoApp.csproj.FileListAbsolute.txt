@@ -1,0 +1,144 @@
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\appsettings.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.exe
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.deps.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.runtimeconfig.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.pdb
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.AssemblyReference.cache
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfoInputs.cache
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfo.cs
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.build.DemoApp.props
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DemoApp.props
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DemoApp.props
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\scopedcss\bundle\DemoApp.styles.css
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CopyComplete
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\refint\DemoApp.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.pdb
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.genruntimeconfig.cache
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\obj\Debug\net6.0\ref\DemoApp.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\BusinessLayer.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Work\TKW\.NET demo app\DemoApp\DemoApp\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\refint\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\appsettings.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.exe
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.runtimeconfig.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.build.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\scopedcss\bundle\DemoApp.styles.css
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CopyComplete
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.genruntimeconfig.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice-DotNet-Practice\DemoApp\DemoApp\DemoApp\obj\Debug\net6.0\ref\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\appsettings.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.exe
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.runtimeconfig.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.build.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\scopedcss\bundle\DemoApp.styles.css
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CopyComplete
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\refint\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.genruntimeconfig.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\ref\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfoInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.AssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\refint\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\appsettings.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.exe
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.deps.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.runtimeconfig.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DemoApp.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.build.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DemoApp.props
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\scopedcss\bundle\DemoApp.styles.css
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.csproj.CopyComplete
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\DemoApp.genruntimeconfig.cache
+C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DemoApp\obj\Debug\net6.0\ref\DemoApp.dll
