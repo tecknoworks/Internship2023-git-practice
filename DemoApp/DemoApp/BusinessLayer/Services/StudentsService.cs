@@ -13,7 +13,7 @@ namespace BusinessLayer.Services
             _studentService = studentService;
         }
 
-        public async Task<IEnumerable<Student>> GetStudentsAsync()
+        public async Task<List<Student>> GetStudentsAsync()
         {
             try
             {

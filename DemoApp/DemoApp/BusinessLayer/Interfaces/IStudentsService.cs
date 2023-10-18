@@ -4,7 +4,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IStudentsService
     {
-        Task<IEnumerable<Student>> GetStudentsAsync();
+        Task<List<Student>> GetStudentsAsync();
         Task<bool> StudentExistsAsync(int studentId);
         Task<Student> CreateStudent(int personId, Student newStudent);
         Task DeleteStudent(int studentId);
