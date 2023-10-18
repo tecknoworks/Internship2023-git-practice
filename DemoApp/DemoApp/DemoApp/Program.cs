@@ -1,6 +1,10 @@
+using BusinessLayer.Interfaces;
 using BusinessLayer.Services;
-using DataAccessLayer.Repositories;
+using DataAccessLayer;
+using DataAccessLayer.Interfaces;
+using DataAccessLayer.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +16,17 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IStudentsRepository, StudentsRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddDbContext<SchoolContext>(options =>
+options.UseSqlServer(builder.Configuration["ConnectionStrings:Local"]));
+
+builder.Services.AddScoped<IStudentsDataService, StudentsDataService>();
 builder.Services.AddScoped<IStudentsService, StudentsService>();
+builder.Services.AddScoped<IPersonsDataService, PersonsDataService>();
+builder.Services.AddScoped<IPersonsService, PersonsService>();
+builder.Services.AddScoped<ITeachersDataService, TeachersDataService>();
+builder.Services.AddScoped<ITeachersService, TeachersService>();
+
 
 var app = builder.Build();
 

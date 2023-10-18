@@ -1,5 +1,7 @@
+using AutoMapper;
+using BusinessLayer.Interfaces;
 using BusinessLayer.Models;
-using BusinessLayer.Services;
+using DemoApp.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoApp.Controllers
@@ -9,62 +11,35 @@ namespace DemoApp.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentsService _studentService;
+        private readonly IMapper _mapper;
 
-        public StudentsController(IStudentsService studentService)
+        public StudentsController(IStudentsService studentService, IMapper mapper)
         {
             _studentService = studentService;
+            _mapper = mapper;
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet("GetStudents")]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
+        public async Task<ActionResult<IEnumerable<StudentDto>>> GetStudents()
         {
-            return Ok(await _studentService.GetStudentsAsync());
-        }
-
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("GetStudent/{studentId}", Name ="GetStudent")]
-        public async Task<ActionResult<Student>> GetStudent(int studentId)
-        {
-            var student = await _studentService.GetStudentAsync(studentId);
-
-            if (student == null)
-            {
-                return NotFound($"Student with id {studentId} does not exist.");
-            }
-
-            return Ok(student);
+            var students = await _studentService.GetStudentsAsync();
+            return Ok(_mapper.Map<IEnumerable<StudentDto>>(students));
         }
 
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpPost("CreateStudent")]
-        public async Task<ActionResult<Student>> CreateStudent(Student newStudent)
+        [HttpPost("CreateStudent/{personId}")]
+        public async Task<ActionResult<StudentDto>> CreateStudent(int personId, [FromBody] StudentDtoWithoutId newStudent)
         {
-            if (await _studentService.StudentExistsAsync(newStudent.Id))
-            {
-                return BadRequest($"Student with id {newStudent.Id} already exists.");
-            }
 
-            await _studentService.CreateStudent(newStudent);
+            var student = _mapper.Map<Student>(newStudent);
 
-            return CreatedAtRoute("GetStudent", new { studentId = newStudent.Id }, newStudent);
-        }
+            await _studentService.CreateStudent(personId, student);
 
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [HttpPut("UpdateStudent/{studentId}")]
-        public async Task<ActionResult> UpdateStudent(int studentId, Student updatedStudent) 
-        {
-            if (!await _studentService.StudentExistsAsync(studentId)) 
-            {
-                return NotFound($"Student with id {studentId} does not exist.");
-            }
+            var studentToReturn = _mapper.Map<StudentDto>(student);
 
-            await _studentService.UpdateStudent(studentId, updatedStudent);
-
-            return Ok("Student was updated successfully");
+            return Ok(studentToReturn);
         }
 
         [ProducesResponseType(StatusCodes.Status404NotFound)]

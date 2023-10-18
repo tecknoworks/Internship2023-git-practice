@@ -1,56 +1,45 @@
-﻿using BusinessLayer.Models;
-using DataAccessLayer.Repositories;
+﻿using BusinessLayer.Interfaces;
+using BusinessLayer.Models;
+using DataAccessLayer.Interfaces;
 
 namespace BusinessLayer.Services
 {
     public class StudentsService : IStudentsService
     {
-        private readonly IStudentsRepository _studentsRepository;
+        private readonly IStudentsDataService _studentService;
        
-        public StudentsService(IStudentsRepository studentsRepository)
-        { 
-            _studentsRepository = studentsRepository ?? throw new ArgumentNullException(nameof(studentsRepository));
+        public StudentsService(IStudentsDataService studentService)
+        {
+            _studentService = studentService;
         }
 
         public async Task<IEnumerable<Student>> GetStudentsAsync()
         {
-            return await _studentsRepository.GetStudentsAsync();
+            return await _studentService.GetStudentsAsync();
 
-        }
-
-        public async Task<Student?> GetStudentAsync(int studentId)
-        {
-            return await _studentsRepository.GetStudentAsync(studentId);
         }
 
         public async Task<bool> StudentExistsAsync(int studentId)
         {
-            return await _studentsRepository.StudentExistsAsync(studentId);
+            return await _studentService.StudentExistsAsync(studentId);
         }
 
-        public Task CreateStudent(Student newStudent)
+        public async Task<Student> CreateStudent(int personId, Student newStudent)
         {
-            _studentsRepository.CreateStudent(newStudent);
-            return Task.CompletedTask;
+            return await _studentService.CreateStudentAsync(personId, newStudent);
         }
 
         public Task DeleteStudent(int studentId)
         {
             try
             {
-                _studentsRepository.DeleteStudent(studentId);
+                _studentService.DeleteStudentAsync(studentId);
                 return Task.CompletedTask;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-        }
-
-        public Task UpdateStudent(int studentId, Student newStudent) 
-        {
-            _studentsRepository.UpdateStudent(studentId, newStudent);
-            return Task.CompletedTask;
         }
     }
 }
