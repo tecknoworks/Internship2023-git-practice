@@ -50,11 +50,12 @@ namespace DemoApp.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task DeleteStudentById(int id)
+        public async Task<ActionResult> DeleteStudentById(int id)
         {
             try
             {
                 await _studentService.DeleteStudentLogic(id);
+                return Ok("Student deleted");
             }
             catch (Exception ex)
             {
