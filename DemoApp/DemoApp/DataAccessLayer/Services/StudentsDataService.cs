@@ -60,7 +60,7 @@ namespace DataAccessLayer.Services
             }
         }
 
-        public async Task DeleteStudentAsync(int studentId)
+        public async Task<string> DeleteStudentAsync(int studentId)
         {
             var student = await _context.Students.FirstOrDefaultAsync(student => student.Id == studentId);
             if (student == null) 
@@ -72,6 +72,7 @@ namespace DataAccessLayer.Services
             {
                 _context.Students.Remove(student);
                 await _context.SaveChangesAsync();
+                return $"Deleted student with id {studentId}";
             }
             catch(Exception ex) 
             {

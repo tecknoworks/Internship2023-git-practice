@@ -49,11 +49,11 @@ namespace BusinessLayer.Services
             }
         }
 
-        public async Task DeleteStudent(int studentId)
+        public async Task<string> DeleteStudent(int studentId)
         {
             try
             {
-                await _studentService.DeleteStudentAsync(studentId);
+                return await _studentService.DeleteStudentAsync(studentId);
             }
             catch (Exception ex)
             {

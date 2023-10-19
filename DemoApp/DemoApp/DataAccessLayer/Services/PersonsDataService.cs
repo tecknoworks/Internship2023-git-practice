@@ -29,12 +29,11 @@ namespace DataAccessLayer.Services
 
         public async Task<Person> GetPersonAsync(int personId)
         {
-            var person = await _context.Persons.FirstOrDefaultAsync(person => person.Id == personId);
-            if (person == null) 
-            {
+            if (await _context.Persons.AnyAsync(x => x.Id == personId))
                 throw new KeyNotFoundException($"Person with id {personId} does not exist.");
-            }
-            return person;
+            
+            return await _context.Persons.FirstOrDefaultAsync(person => person.Id == personId);
+
         }
 
         public async Task<List<Person>> GetPersonsAsync()
@@ -49,11 +48,12 @@ namespace DataAccessLayer.Services
             }
         }
 
-        public async Task SaveChangesAsync()
+        public async Task<string> SaveChangesAsync()
         {
             try
             {
                 await _context.SaveChangesAsync();
+                return "Changes saved to database.";
             }
             catch(Exception ex)
             { 

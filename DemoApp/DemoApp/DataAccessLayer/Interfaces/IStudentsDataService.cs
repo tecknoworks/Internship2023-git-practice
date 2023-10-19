@@ -11,7 +11,7 @@ namespace DataAccessLayer.Interfaces
     {
         Task<List<Student>> GetStudentsAsync();
         Task<Student> CreateStudentAsync(int personId, Student newStudent);
-        Task DeleteStudentAsync(int studentId);
+        Task<string> DeleteStudentAsync(int studentId);
         Task<bool> StudentExistsAsync(int studentId);
     }
 }
