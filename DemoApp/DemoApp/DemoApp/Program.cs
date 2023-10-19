@@ -1,4 +1,9 @@
+using BusinessLayer.Interfaces;
 using BusinessLayer.Services;
+using DataAccessLayer;
+using DataAccessLayer.Interfaces;
+using DataAccessLayer.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +14,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IStudentsService, StudentsService>();
+builder.Services.AddScoped<IStudentLogicService, StudentLogicService>();
+builder.Services.AddScoped<IStudentServices, StudentServices>();
+
+builder.Services.AddScoped<IPersonLogicService, PersonLogicService>();
+builder.Services.AddScoped<IPersonServices, PersonServices>();
+
+builder.Services.AddScoped<ITeacherLogicService, TeacherLogicService>();
+builder.Services.AddScoped<ITeacherServices, TeacherServices>();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:Local"]));
+
 
 var app = builder.Build();
 

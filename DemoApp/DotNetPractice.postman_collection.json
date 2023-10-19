@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "bcb20452-76fb-4dd7-a7f9-ff121532fb8e",
+		"name": "DotNetPractice",
+		"description": "This is the collection for the .net practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21137570"
+	},
+	"item": [
+		{
+			"name": "Get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44370/Students",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"Students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all students",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44370/Students",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44370",
+							"path": [
+								"Students"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:17:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 101,\n        \"name\": \"James\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 102,\n        \"name\": \"Smith\",\n        \"branch\": \"ETC\",\n        \"section\": \"B\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 103,\n        \"name\": \"David\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 104,\n        \"name\": \"Sara\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Female\"\n    },\n    {\n        \"id\": 105,\n        \"name\": \"Pam\",\n        \"branch\": \"ETC\",\n        \"section\": \"B\",\n        \"gender\": \"Female\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get student by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get student by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44370/Students/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44370",
+							"path": [
+								"Students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:18:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 101,\n    \"name\": \"James\",\n    \"branch\": \"CSE\",\n    \"section\": \"A\",\n    \"gender\": \"Male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add new student",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Add new student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Daniel\",\r\n  \"branch\": \"ETC\",\r\n  \"section\": \"A\",\r\n  \"gender\": \"Male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44370/Students/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44370",
+							"path": [
+								"Students",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:19:28 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": null,\n    \"value\": [\n        {\n            \"id\": 101,\n            \"name\": \"James\",\n            \"branch\": \"CSE\",\n            \"section\": \"A\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": 102,\n            \"name\": \"Smith\",\n            \"branch\": \"ETC\",\n            \"section\": \"B\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": 103,\n            \"name\": \"David\",\n            \"branch\": \"CSE\",\n            \"section\": \"A\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": 104,\n            \"name\": \"Sara\",\n            \"branch\": \"CSE\",\n            \"section\": \"A\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": 105,\n            \"name\": \"Pam\",\n            \"branch\": \"ETC\",\n            \"section\": \"B\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": 106,\n            \"name\": \"Daniel\",\n            \"branch\": \"ETC\",\n            \"section\": \"A\",\n            \"gender\": \"Male\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update student by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Update student by id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Marcel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44370/Students/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44370",
+							"path": [
+								"Students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:19:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Successfully updated!"
+				}
+			]
+		},
+		{
+			"name": "Delete student by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Delete student by id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44370/Students/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44370",
+							"path": [
+								"Students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:20:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Successfully deleted!"
+				}
+			]
+		}
+	]
+}

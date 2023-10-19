@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj",
-        "projectName": "BusinessLayer",
-        "projectPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Alexandra Czako\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\obj\\",
+        "projectUniqueName": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\BogdanFIlip\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Internship\\Internship2023-git-practice\\DemoApp\\DemoApp\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alexandra Czako\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BogdanFIlip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,66 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
-        "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Alexandra Czako\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\DataAccessLayer\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Alexandra Czako\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Work\\TKW\\.NET demo app\\DemoApp\\BusinessLayer\\BusinessLayer.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
