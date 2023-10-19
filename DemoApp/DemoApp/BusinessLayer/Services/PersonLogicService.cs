@@ -18,7 +18,7 @@ namespace BusinessLayer.Services
             this._personServices = personService;
         }
 
-        public async Task<Person> CreatePersonLogic(Person person)
+        public async Task<string> CreatePersonLogic(Person person)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace BusinessLayer.Services
             }
         }
 
-        public async Task<Person> UpdatePersonLogic(int id, Person person)
+        public async Task<string> UpdatePersonLogic(int id, Person person)
         {
             try
             {

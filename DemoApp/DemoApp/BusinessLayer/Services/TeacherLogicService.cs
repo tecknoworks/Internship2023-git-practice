@@ -21,7 +21,7 @@ namespace BusinessLayer.Services
             _teacherService = teacherService;
         }
 
-        public async Task<Teacher> CreateTeacherLogic(int personId, Teacher teacher)
+        public async Task<string> CreateTeacherLogic(int personId, Teacher teacher)
         {
             try
             {

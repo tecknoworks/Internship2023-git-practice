@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IPersonLogicService
     {
-        Task<Person> CreatePersonLogic(Person person);
-        Task<Person> UpdatePersonLogic(int id, Person person);
+        Task<string> CreatePersonLogic(Person person);
+        Task<string> UpdatePersonLogic(int id, Person person);
     }
 }

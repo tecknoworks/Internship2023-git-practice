@@ -22,12 +22,11 @@ namespace DemoApp.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<Teacher>> CreateNewStudent(int personId, Teacher teacher)
+        public async Task<ActionResult<string>> CreateNewTeacher(int personId, Teacher teacher)
         {
             try
             {
-                await _teacherService.CreateTeacherLogic(personId, teacher);
-                return Ok("added new teacher");
+                return await _teacherService.CreateTeacherLogic(personId, teacher);
             }
             catch (Exception ex)
             {

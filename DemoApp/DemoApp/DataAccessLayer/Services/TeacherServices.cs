@@ -15,8 +15,9 @@ namespace DataAccessLayer.Services
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task<Teacher> CreateTeacher(int personId, Teacher teacher)
+        public async Task<string> CreateTeacher(int personId, Teacher teacher)
         {
+            var message = "Teacher created successfully";
             if(personId <= 0)
             {
                 throw new ArgumentException("Person id not valid ");
@@ -32,7 +33,7 @@ namespace DataAccessLayer.Services
                 await _applicationDbContext.Teachers.AddAsync(teacher);
                 await _applicationDbContext.SaveChangesAsync();
 
-                return teacher;
+                return message;
             }catch(Exception ex)
             {
                 throw new Exception("Something went wrong in Data layer -> Teacher",ex);

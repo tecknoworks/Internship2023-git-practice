@@ -21,12 +21,11 @@ namespace DemoApp.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPost]
 
-        public async Task<ActionResult<Person>> CreateNewPerson(Person person)
+        public async Task<ActionResult<string>> CreateNewPerson(Person person)
         {
             try
             {
-                await _personService.CreatePersonLogic(person);
-                return Ok("added new person");
+                return await _personService.CreatePersonLogic(person);
             }
             catch (Exception ex) {
                 return BadRequest(ex.Message);
@@ -35,12 +34,11 @@ namespace DemoApp.Controllers
 
         [HttpPut("{id}")]
 
-        public async Task<ActionResult<Person>> UpdateExistingPerson(int id, Person person)
+        public async Task<ActionResult<string>> UpdateExistingPerson(int id, Person person)
         {
             try
             {
-                await _personService.UpdatePersonLogic(id, person);
-                return Ok("Updated person successfully");
+                return await _personService.UpdatePersonLogic(id, person);
             }
             catch (Exception ex)
             {

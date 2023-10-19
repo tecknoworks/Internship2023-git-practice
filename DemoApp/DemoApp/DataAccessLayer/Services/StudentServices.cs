@@ -16,8 +16,9 @@ namespace DataAccessLayer.Services
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task<Student> CreateStudent(int personId, Student student)
+        public async Task<string> CreateStudent(int personId, Student student)
         {
+            var message = "Student created successfully";
             if (personId <= 0)
             {
                 throw new Exception("PersonId not valid");
@@ -34,7 +35,7 @@ namespace DataAccessLayer.Services
                 await _applicationDbContext.Students.AddAsync(student);
                 await _applicationDbContext.SaveChangesAsync();
 
-                return student;
+                return message;
             }
             catch (Exception ex)
             {
@@ -69,8 +70,11 @@ namespace DataAccessLayer.Services
             }
         }
 
-        public async Task DeleteStudent(int id)
+        public async Task<string> DeleteStudent(int id)
         {
+
+            var message = "Student was deleted successfully";
+
             if(id <= 0)
             {
                 throw new Exception("Id must be greater then 0");
@@ -84,8 +88,9 @@ namespace DataAccessLayer.Services
                     throw new Exception("Invalid id");
                 }
 
-                await Task.FromResult(_applicationDbContext.Students.Remove(student));
+                _applicationDbContext.Students.Remove(student);
                 await _applicationDbContext.SaveChangesAsync();
+                return message;
 
             }
             catch (Exception ex)

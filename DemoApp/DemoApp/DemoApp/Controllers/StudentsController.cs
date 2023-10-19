@@ -22,12 +22,11 @@ namespace DemoApp.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<Student>> CreateNewStudent(int personId,Student student)
+        public async Task<ActionResult<string>> CreateNewStudent(int personId,Student student)
         {
             try
             {
-                await _studentService.CreateStudentLogic(personId, student);
-                return Ok("added new person");
+                return await _studentService.CreateStudentLogic(personId, student);
             }
             catch (Exception ex)
             {
@@ -50,16 +49,15 @@ namespace DemoApp.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteStudentById(int id)
+        public async Task<ActionResult<string>> DeleteStudentById(int id)
         {
             try
             {
-                await _studentService.DeleteStudentLogic(id);
-                return Ok("Student deleted");
+                return await _studentService.DeleteStudentLogic(id);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
     }

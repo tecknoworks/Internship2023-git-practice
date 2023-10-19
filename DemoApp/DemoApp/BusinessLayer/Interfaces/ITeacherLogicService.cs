@@ -11,7 +11,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface ITeacherLogicService
     {
-        Task<Teacher> CreateTeacherLogic(int personId, Teacher teacher);
+        Task<string> CreateTeacherLogic(int personId, Teacher teacher);
         Task<IList> GetAllTeachersLogic();
     }
 }

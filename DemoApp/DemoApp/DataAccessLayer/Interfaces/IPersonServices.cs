@@ -9,7 +9,7 @@ namespace DataAccessLayer.Interfaces
 {
     public interface IPersonServices
     {
-        Task<Person> CreatePerson(Person person);
-        Task<Person> UpdatePerson(int id, Person person);
+        Task<string> CreatePerson(Person person);
+        Task<string> UpdatePerson(int id, Person person);
     }
 }

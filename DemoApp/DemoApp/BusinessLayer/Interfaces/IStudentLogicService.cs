@@ -5,9 +5,9 @@ namespace BusinessLayer.Interfaces
 {
     public interface IStudentLogicService
     {
-        Task<Student> CreateStudentLogic(int personId, Student student);
+        Task<string> CreateStudentLogic(int personId, Student student);
         Task<IList> GetAllStudentsLogic();
 
-        Task DeleteStudentLogic(int id);
+        Task<string> DeleteStudentLogic(int id);
     }
 }

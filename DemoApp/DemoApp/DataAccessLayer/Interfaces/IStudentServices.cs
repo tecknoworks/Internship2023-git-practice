@@ -11,8 +11,8 @@ namespace DataAccessLayer.Interfaces
 {
     public interface IStudentServices
     {
-        Task<Student> CreateStudent(int personId, Student student);
+        Task<string> CreateStudent(int personId, Student student);
         Task<IList> GetAllStudents();
-        Task DeleteStudent(int id);
+        Task<string> DeleteStudent(int id);
     }
 }

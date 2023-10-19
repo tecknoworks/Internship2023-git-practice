@@ -17,8 +17,9 @@ namespace DataAccessLayer.Services
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task<Person> CreatePerson(Person person)
+        public async Task<string> CreatePerson(Person person)
         {
+            var message = "Person added successfully";
             if (person == null) { 
                 throw new ArgumentNullException("Person object is null");
             }
@@ -27,7 +28,7 @@ namespace DataAccessLayer.Services
                 await _applicationDbContext.Persons.AddAsync(person);
                 await _applicationDbContext.SaveChangesAsync();
 
-                return person;
+                return message;
             }
             catch (Exception ex)
             {
@@ -36,8 +37,9 @@ namespace DataAccessLayer.Services
 
         }
 
-        public async Task<Person> UpdatePerson(int id, Person person)
+        public async Task<string> UpdatePerson(int id, Person person)
         {
+            var message = "Person modified successfully";
             if (person == null)
             {
                 throw new ArgumentNullException("Person object is null");
@@ -56,7 +58,7 @@ namespace DataAccessLayer.Services
 
                 await _applicationDbContext.SaveChangesAsync();
 
-                return person;
+                return message;
             }
             catch (Exception ex)
             {

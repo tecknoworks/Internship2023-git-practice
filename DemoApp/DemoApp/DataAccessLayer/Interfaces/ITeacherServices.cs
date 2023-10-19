@@ -10,7 +10,7 @@ namespace DataAccessLayer.Interfaces
 {
     public interface ITeacherServices
     {
-        Task<Teacher> CreateTeacher(int personId, Teacher teacher);
+        Task<string> CreateTeacher(int personId, Teacher teacher);
         Task<IList> GetAllTeachers();
     }
 }

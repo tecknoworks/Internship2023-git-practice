@@ -15,7 +15,7 @@ namespace BusinessLayer.Services
             _studentServices = studentServices;
         }
 
-        public async Task<Student> CreateStudentLogic(int personId, Student student)
+        public async Task<string> CreateStudentLogic(int personId, Student student)
         {
             try
             {
@@ -39,11 +39,11 @@ namespace BusinessLayer.Services
             }
         }
 
-        public async Task DeleteStudentLogic(int id)
+        public async Task<string> DeleteStudentLogic(int id)
         {
             try
             {
-                await _studentServices.DeleteStudent(id);
+                return await _studentServices.DeleteStudent(id);
             }
             catch (Exception ex)
             {
