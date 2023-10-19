@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "aa1aa6c1-894f-47ff-a22a-9d6488c0f79e",
+		"name": "marco-dotnet-practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30488129"
+	},
+	"item": [
+		{
+			"name": "Get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:{{portNumber}}/api/students/GetStudents"
+			},
+			"response": [
+				{
+					"name": "Get students",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://localhost:{{portNumber}}/api/students/GetStudents"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:23:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 101,\n        \"name\": \"Dalmatieni\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 102,\n        \"name\": \"Smith\",\n        \"branch\": \"ETC\",\n        \"section\": \"B\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 103,\n        \"name\": \"David\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 104,\n        \"name\": \"Sara\",\n        \"branch\": \"CSE\",\n        \"section\": \"A\",\n        \"gender\": \"Female\"\n    },\n    {\n        \"id\": 105,\n        \"name\": \"Pam\",\n        \"branch\": \"ETC\",\n        \"section\": \"B\",\n        \"gender\": \"Female\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:{{portNumber}}/api/students/GetStudent/101"
+			},
+			"response": [
+				{
+					"name": "Get student",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://localhost:{{portNumber}}/api/students/GetStudent/101"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:23:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 101,\n    \"name\": \"Dalmatieni\",\n    \"branch\": \"CSE\",\n    \"section\": \"A\",\n    \"gender\": \"Male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 200,\r\n  \"name\": \"Marco\",\r\n  \"branch\": \"CS\",\r\n  \"section\": \"B\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:{{portNumber}}/api/students/CreateStudent"
+			},
+			"response": [
+				{
+					"name": "Create student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 200,\r\n  \"name\": \"Marco\",\r\n  \"branch\": \"CS\",\r\n  \"section\": \"B\",\r\n  \"gender\": \"Male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:{{portNumber}}/api/students/CreateStudent"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:23:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:7229/api/students/GetStudent/200"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 200,\n    \"name\": \"Marco\",\n    \"branch\": \"CS\",\n    \"section\": \"B\",\n    \"gender\": \"Male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 101,\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:{{portNumber}}/api/students/UpdateStudent/101"
+			},
+			"response": [
+				{
+					"name": "Update student",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 101,\r\n  \"name\": \"John\",\r\n  \"branch\": \"Wick\",\r\n  \"section\": \"Continental\",\r\n  \"gender\": \"Male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:{{portNumber}}/api/students/UpdateStudent/101"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:24:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "\"Student was updated successfully\""
+				}
+			]
+		},
+		{
+			"name": "Delete student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://localhost:{{portNumber}}/api/students/DeleteStudent/101"
+			},
+			"response": [
+				{
+					"name": "Delete student",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://localhost:{{portNumber}}/api/students/DeleteStudent/101"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 07:24:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "\"Student was deleted successfully.\""
+				}
+			]
+		}
+	]
+}
