@@ -48,7 +48,7 @@ namespace DemoApp.Controllers
                     throw new Exception($"Person with id {id} does not exist.");
                 }
                 _mapper.Map(person, personToUpdate);
-                await _personLogicService.SaveChangesAsync();
+                await _personLogicService.UpdatePerson(id, personToUpdate);
                 return person;
             }
             catch (Exception)
@@ -56,27 +56,7 @@ namespace DemoApp.Controllers
                 throw;
             }
         }
-        /*
-            [HttpPut("/person/{id}")]
-            public async Task<IActionResult> UpdatePerson(int id, [FromBody] Person updatedPerson)
-            {
-                try
-                {
-                    var person = await _personLogicService.GetPersonById(id);
-                    if (person == null)
-                    {
-                        return NotFound();
-                    }
-
-                    await _personLogicService.UpdatePerson(id, updatedPerson);
-                    return Ok();
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }*/
-
+        
         //get person by id
         [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet("/person/{id}")]

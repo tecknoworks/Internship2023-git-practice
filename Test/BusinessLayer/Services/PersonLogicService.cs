@@ -58,14 +58,5 @@ namespace BusinessLayer.Services
             }
 
         }
-
-        public async Task<string> SaveChangesAsync()
-        {
-            return await _personService.SaveChangesAsync();
-        }
-
-
-
-
     }
 }

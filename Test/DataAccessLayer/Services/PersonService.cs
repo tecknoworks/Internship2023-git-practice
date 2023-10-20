@@ -65,15 +65,5 @@ namespace DataAccessLayer.Services
                   return personById;
               }
 
-        public async Task<string> SaveChangesAsync()
-        {
-            await schoolDbContext.SaveChangesAsync();
-            return "changes saved";
-        }
-     
-    
-
-
-
     }
 }

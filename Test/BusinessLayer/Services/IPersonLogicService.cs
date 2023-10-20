@@ -12,6 +12,5 @@ namespace BusinessLayer.Services
         public Task<Person> CreatePerson(Person person);
         public Task<Person?> UpdatePerson(int id, Person person);
         public Task<Person?> GetPersonById(int id);
-        Task<string> SaveChangesAsync();
     }
 }
