@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\MihaiFabian-Bob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MihaiFabian-Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -63,17 +63,17 @@
         }
       }
     },
-    "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\MihaiFabian-Bob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MihaiFabian-Bob\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mihai\\Desktop\\Internship2023-git-practice\\Test\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MihaiFabian-Bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
