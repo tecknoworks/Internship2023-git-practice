@@ -46,3 +46,6 @@ C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\Dat
 C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
 C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\MihaiFabian-Bob\Desktop\New folder\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\MihaiFabian-Bob\Desktop\Internship2023-git-practice\Test\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
